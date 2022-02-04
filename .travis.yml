@@ -39,7 +39,7 @@ jobs:
         - ./gradlew jacocoIntegrationReport
         - bash <(curl -s https://codecov.io/bash) -cF integration
     - stage: format
-      jdk: openjdk17
+      jdk: openjdk15
       script:
         - ./gradlew spotlessCheck
     - stage: publish
