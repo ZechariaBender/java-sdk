@@ -31,7 +31,7 @@ jobs:
         - ./gradlew javadoc
         - test -z "$(git diff --name-only | grep 'docs/')"
 
-        - ./gradlew check
+        - ./gradlew check --exclude-task spotlessCheck --exclude-task spotlessApply --exclude-task spotlessDiagnose
 
         - ./gradlew jacocoTestReport
         - bash <(curl -s https://codecov.io/bash) -cF test
