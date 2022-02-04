@@ -9,7 +9,6 @@ language: java
 
 jdk:
   - openjdk8
-  - openjdk17
 
 # https://docs.gradle.org/current/userguide/travis-ci.html#enable_caching_of_downloaded_artifacts
 before_cache:
