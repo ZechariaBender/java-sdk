@@ -41,7 +41,7 @@ jobs:
     - stage: format
       jdk: openjdk15
       script:
-        - ./gradlew spotlessCheck
+        - ./gradlew spotlessApply
     - stage: publish
       jdk: openjdk8
       script:
