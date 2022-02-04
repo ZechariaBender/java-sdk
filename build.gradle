@@ -110,6 +110,10 @@ tasks.withType(Test) {
 }
 
 check.dependsOn integration
+check.dependsOn.remove(spotlessJava)
+check.dependsOn.remove(spotlessCheck)
+check.dependsOn.remove(spotlessDiagnose)
+check.dependsOn.remove(spotlessApply)
 
 /**
  * Configures coverage reporting.
